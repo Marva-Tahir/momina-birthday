@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Momina 💗</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="hearts"></div>
+
+  <!-- PAGE 1 -->
+  <main class="page active" id="page-name">
+    <section class="card intro-card">
+      <div class="tiny-heart">♡</div>
+      <p class="eyebrow">A tiny surprise awaits...</p>
+      <h1>First things first 💗</h1>
+      <p class="subtitle">Enter your name</p>
+
+      <form class="form" id="name-form">
+        <input id="name-input" type="text" autocomplete="off" placeholder="Your name..." aria-label="Your name">
+        <button type="submit">Continue ✨</button>
+      </form>
+
+      <p class="error" id="name-error"></p>
+    </section>
+  </main>
+
+  <!-- PAGE 2 -->
+  <main class="page" id="page-dob">
+    <section class="card intro-card">
+      <div class="tiny-heart">♡</div>
+      <p class="eyebrow">Good, I know you now 👀</p>
+      <h1>One more thing...</h1>
+      <p class="subtitle">Enter your date of birth 🎂</p>
+
+      <form class="form" id="dob-form">
+        <input id="dob-input" type="date" aria-label="Date of birth">
+        <button type="submit">That's my birthday 🎀</button>
+      </form>
+
+      <p class="error" id="dob-error"></p>
+    </section>
+  </main>
+
+  <!-- PAGE 3 -->
+  <main class="page" id="page-surprise">
+    <section class="card surprise-card">
+      <div class="cake">🎂</div>
+      <p class="eyebrow">Wait a second...</p>
+      <h1>Oh, is today your birthday?</h1>
+      <p class="subtitle">Sorry for the inconvenience, Momina... 🥺</p>
+      <button class="main-button" id="reveal-button">Click here, Momina 💗</button>
+    </section>
+
+    <!-- Birthday message modal -->
+    <div class="modal-backdrop" id="message-modal" aria-hidden="true">
+      <article class="message-card">
+        <button class="close-button" id="close-message" aria-label="Close">×</button>
+
+        <div class="profile-frame">
+          <img src="prof.jpeg" alt="Momina" class="profile-pic">
+        </div>
+
+        <div class="message-content">
+          <p class="script-title">Happy Birthday</p>
+          <h2>Momina 🎂💗</h2>
+
+          <p>
+            Its been almost 1 and a half year to our friendship and every moment
+            with you has been so special. From deciding what to wear tomorrow
+            to making reels every moment has its our beauty. I am not good with
+            words but i will always cherish this friendship of ours.
+            You are my buddyyy. Love you Momo. 💗
+          </p>
+        </div>
+
+        <button class="memory-button" id="memory-button">Click here for memories 📸</button>
+      </article>
+    </div>
+  </main>
+
+  <!-- PAGE 4 -->
+  <main class="page memories-page" id="page-memories">
+    <section class="memories-wrapper">
+      <p class="eyebrow">A few moments worth keeping ✨</p>
+      <h1>Our Little Memories 💗</h1>
+      <p class="memories-subtitle">Some moments are too special to forget.</p>
+
+      <div class="photo-grid">
+        <div class="photo-card photo-one"><img src="pic1.jpeg" alt="Memory 1"></div>
+        <div class="photo-card photo-two"><img src="pic2.jpeg" alt="Memory 2"></div>
+        <div class="photo-card photo-three"><img src="pic3.jpeg" alt="Memory 3"></div>
+        <div class="photo-card photo-four"><img src="pic4.jpeg" alt="Memory 4"></div>
+      </div>
+
+      <p class="final-line">To many more memories, reels &amp; “what should I wear tomorrow?” moments. 🥹💗</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
